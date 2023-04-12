@@ -16,9 +16,9 @@ git clone https://github.com/oussamachah2020/portfolio.git
  ```bash
  npm i
  ```
- to install all dependencies
+ ### to install all dependencies
  
- ### to run for developement just run the following commmand 
+ ### To start the developement server just run the following commmand 
  ```bash
  npm run dev
  ```
