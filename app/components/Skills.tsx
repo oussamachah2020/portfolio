@@ -39,13 +39,13 @@ const item = {
 
 const Skills = (props: Props) => {
   return (
-    <div className="mt-32">
+    <div className="mt-32" id="skills">
       <h2 className="text-center uppercase text-xl">Skills</h2>
       <motion.section
         variants={container}
         initial="hidden"
         animate="visible"
-        className="flex flex-wrap justify-center items-center mt-5 mdlg:flex-nowrap gap-3"
+        className="flex flex-wrap justify-center items-center mt-5 mdlg:flex-nowrap gap-3 mx-5"
       >
         {skills.map((skill) => (
           <>

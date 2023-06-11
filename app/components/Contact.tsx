@@ -9,10 +9,11 @@ const Contact = () => {
       <div className="flex flex-wrap justify-evenly items-center mt-10 md:flex:flex-nowrap">
         <div>
           <p>
-            Phone Number: <span className="italic">+212 653643001</span>
+            Phone Number: <span className="font-bold">+212 653643001</span>
           </p>
           <p>
-            E-mail: <span className="italic">oussamachahidi20@gmail.com</span>
+            E-mail:{" "}
+            <span className="font-bold">oussamachahidi20@gmail.com</span>
           </p>
         </div>
         <div className="mt-5 flex flex-wrap justify-between items-center md:flex-nowrap">
@@ -50,8 +51,8 @@ const Contact = () => {
         <Link href={""}>
           <Image
             src={"/assets/linkedIn.png"}
-            width={60}
-            height={60}
+            width={50}
+            height={50}
             alt={"icons"}
             title="LinkedIn.com"
           />{" "}
@@ -59,8 +60,8 @@ const Contact = () => {
         <Link href={""}>
           <Image
             src={"/assets/twitter.png"}
-            width={60}
-            height={60}
+            width={50}
+            height={50}
             alt={"icons"}
             title="Twitter.com"
           />

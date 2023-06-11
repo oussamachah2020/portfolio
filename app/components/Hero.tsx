@@ -15,24 +15,18 @@ const Hero = (props: Props) => {
           alt="profile"
           width={0}
           height={0}
-          className="w-[160px] md:w-[200px]"
+          className="w-[100px] md:w-[180px]"
         />
         <div>
           <TypeAnimation
-            sequence={[
-              "Oussama Chahidi", // Types 'One'
-              1000,
-            ]}
+            sequence={["Oussama Chahidi", 1000]}
             wrapper="p"
             cursor={true}
             repeat={Infinity}
             className="text-2xl text-center md:text-5xl"
           />
           <TypeAnimation
-            sequence={[
-              "Full JavaScript Developer", // Types 'One'
-              1500,
-            ]}
+            sequence={["Full JavaScript Developer", 1500]}
             wrapper="p"
             cursor={true}
             repeat={Infinity}

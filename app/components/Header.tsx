@@ -30,6 +30,7 @@ const sidebar = {
 
 const Header = (props: Props) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
   return (
     <div className="flex justify-between items-center py-5 px-5">
       <motion.div
@@ -73,10 +74,18 @@ const Header = (props: Props) => {
         </div>
         <div className="hidden md:block md:w-full">
           <ul className="flex justify-center items-center gap-7">
-            <li className="list-item">Home</li>
-            <li className="list-item">Skills</li>
-            <li className="list-item">Projects</li>
-            <li className="list-item">Experience</li>
+            <li className="list-item">
+              <a href="#home">Home</a>
+            </li>
+            <li className="list-item">
+              <a href="#skills">Skills</a>
+            </li>
+            <li className="list-item">
+              <a href="#projects">Projects</a>
+            </li>
+            <li className="list-item">
+              <a href="#experience">Experience</a>
+            </li>
           </ul>
         </div>
       </motion.div>

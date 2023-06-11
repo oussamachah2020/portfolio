@@ -6,11 +6,13 @@ body {
   background-color: #0b244a;
   color: #fff;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .skill_container {
   width: 200px;
   height: 180px;
+  scroll-behavior: smooth;
 
   background: linear-gradient(
     120.1deg,
