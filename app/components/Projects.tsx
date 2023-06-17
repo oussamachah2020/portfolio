@@ -27,13 +27,13 @@ const item = {
 
 const Projects = () => {
   return (
-    <div className="mt-32">
+    <div className="mt-32" id="projects">
       <p className="uppercase text-center text-xl font-bold">Projects</p>
       <motion.section
         variants={container}
         initial="hidden"
         animate="visible"
-        className="flex flex-wrap justify-center items-center mt-10 md:lg:flex-nowrap gap-10"
+        className="flex flex-wrap justify-center items-center mt-10 md:lg:flex-nowrap gap-16"
       >
         {projects.map((project) => (
           <>

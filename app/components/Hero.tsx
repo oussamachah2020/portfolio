@@ -31,7 +31,7 @@ const Hero = (props: Props) => {
           />
         </div>
       </div>
-      <p className="w-[90%] md:w-[100%] font-medium mt-10 text-xl">
+      <p className="w-[90%] md:w-[60%] font-medium mt-10 text-xl">
         Full-Stack Developer. A self-taught and computer-interested student,
         with solid backgrounds. knowledge of the latest technologies, and{" "}
         <span className="font-bold italic">

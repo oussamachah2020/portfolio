@@ -17,15 +17,7 @@ export const projects = [
     resize: false,
     link: "https://matrix-sigma.vercel.app/",
   },
-  {
-    id: 3,
-    image: "/assets/project3.svg",
-    title: "Music App",
-    description:
-      "Music web App where you can upload you favorite music and enjoy them. You can also connect to your spotify and access your music.Using MERN and spotify API",
-    resize: false,
-    link: "",
-  },
+
   {
     id: 4,
     image: "/assets/project4.png",

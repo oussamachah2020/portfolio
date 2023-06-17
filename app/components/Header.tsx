@@ -46,9 +46,11 @@ const Header = (props: Props) => {
         className="flex justify-center items-center gap-2"
       >
         <Image src="/assets/message.svg" alt="message" width={25} height={25} />
-        <Link href={""}>
-          <p>contact me</p>
-        </Link>
+        <button>
+          <a href={`mailto:oussamachahidi20@gmail.com?subject=development job`}>
+            contact me
+          </a>
+        </button>
       </motion.div>
       <motion.div
         initial={{
@@ -83,9 +85,9 @@ const Header = (props: Props) => {
             <li className="list-item">
               <a href="#projects">Projects</a>
             </li>
-            <li className="list-item">
+            {/* <li className="list-item">
               <a href="#experience">Experience</a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </motion.div>
