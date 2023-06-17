@@ -28,38 +28,36 @@ const item = {
 const Projects = () => {
   return (
     <div className="mt-32">
-      <p className="uppercase text-center">Projects</p>
+      <p className="uppercase text-center text-xl font-bold">Projects</p>
       <motion.section
         variants={container}
         initial="hidden"
         animate="visible"
-        className="flex flex-wrap justify-center items-center mt-10 mdlg:flex-nowrap gap-3"
+        className="flex flex-wrap justify-center items-center mt-10 md:lg:flex-nowrap gap-10"
       >
         {projects.map((project) => (
           <>
-            <>
-              <motion.div
-                variants={item}
-                key={project.id}
-                className="project_container flex flex-col justify-center items-center gap-3 mt-10"
+            <motion.div
+              variants={item}
+              key={project.id}
+              className="project_container flex flex-col justify-center items-center gap-3 mt-10"
+            >
+              <Image
+                src={project.image}
+                width={400}
+                height={100}
+                alt={`${project.title}_image`}
+                className={`${!project.resize ? "w-[100%]" : "w-[80%]"}`}
+              />
+              <p className="uppercase italic text-left">{project.title}</p>
+              <p className="text-left px-5">{project.description}</p>
+              <button
+                className="m-5 bg-slate-300 text-black px-8 py-2 rounded-md"
+                onClick={() => window.open(project.link, "_blank")}
               >
-                <Image
-                  src={project.image}
-                  width={400}
-                  height={100}
-                  alt={`${project.title}_image`}
-                  className={`${!project.resize ? "w-[100%]" : "w-[80%]"}`}
-                />
-                <p className="uppercase italic text-left">{project.title}</p>
-                <p className="text-left px-5">{project.description}</p>
-                <button
-                  className="m-5 bg-slate-300 text-black px-8 py-2 rounded-md"
-                  onClick={() => window.open(project.link, "_blank")}
-                >
-                  Visit
-                </button>
-              </motion.div>
-            </>
+                Visit
+              </button>
+            </motion.div>
           </>
         ))}
       </motion.section>

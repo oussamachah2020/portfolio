@@ -32,7 +32,7 @@ const Header = (props: Props) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <div className="flex justify-between items-center py-5 px-5">
+    <div className="flex justify-between items-center p-10">
       <motion.div
         initial={{
           x: -500,

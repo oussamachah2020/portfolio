@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #0b244a;
+  background-color: #01111f;
   color: #fff;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 .skill_container {

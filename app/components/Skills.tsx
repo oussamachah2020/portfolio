@@ -40,7 +40,7 @@ const item = {
 const Skills = (props: Props) => {
   return (
     <div className="mt-32" id="skills">
-      <h2 className="text-center uppercase text-xl">Skills</h2>
+      <h2 className="text-center uppercase text-xl font-bold">Skills</h2>
       <motion.section
         variants={container}
         initial="hidden"
