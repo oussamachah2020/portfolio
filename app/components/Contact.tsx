@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import DownloadIcon from "@/public/assets/downloadIcon.png";
 
 const Contact = () => {
   return (
-    <div className="contact mt-10 p-10">
+    <div className=" mt-10 p-10">
       <h2 className="text-center text-xl">Contacts</h2>
       <div className="flex flex-wrap justify-evenly items-center mt-10 md:flex:flex-nowrap">
         <div>
@@ -15,6 +16,17 @@ const Contact = () => {
             E-mail:{" "}
             <span className="font-bold">oussamachahidi20@gmail.com</span>
           </p>
+          <a href="/Resume.pdf" download>
+            <button className="btn btn-neutral w-full mt-5 flex justify-between">
+              Download CV
+              <Image
+                src={DownloadIcon}
+                alt="downalodIcon"
+                width={25}
+                height={25}
+              />
+            </button>
+          </a>
         </div>
         <div className="mt-5 flex flex-wrap justify-between items-center md:flex-nowrap">
           <form className="flex flex-wrap justify-center items-center gap-3 max-w-md">
@@ -67,6 +79,11 @@ const Contact = () => {
           />
         </Link>
       </section>
+      <div>
+        <p className="text-center mt-10 font-semibold text-[#7e7e7e]">
+          &copy; 2023 Oussama Chahidi. All rights reserved.
+        </p>
+      </div>
     </div>
   );
 };

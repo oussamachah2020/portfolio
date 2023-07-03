@@ -17,7 +17,6 @@ export const projects = [
     resize: false,
     link: "https://matrix-sigma.vercel.app/",
   },
-
   {
     id: 4,
     image: "/assets/project4.png",
