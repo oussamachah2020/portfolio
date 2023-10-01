@@ -32,12 +32,10 @@ const Hero = (props: Props) => {
         </div>
       </div>
       <p className="w-[90%] md:w-[60%] font-medium mt-10 text-xl">
-        Full-Stack Developer. A self-taught and computer-interested student,
-        with solid backgrounds. knowledge of the latest technologies, and{" "}
-        <span className="font-bold italic">
-          i will build the right application for you to help you grow your
-          business.
-        </span>
+        Software engineer and a JavaScript enthusiast, I bring a wealth of
+        knowledge and expertise to the world of web development. With a strong
+        foundation in building web applications and a keen eye for design, I am
+        dedicated to crafting exceptional digital experiences.
       </p>
     </div>
   );

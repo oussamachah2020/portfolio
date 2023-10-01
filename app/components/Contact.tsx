@@ -16,7 +16,7 @@ const Contact = () => {
             E-mail:{" "}
             <span className="font-bold">oussamachahidi20@gmail.com</span>
           </p>
-          <a href="/Resume.pdf" download>
+          <a href="/oussama-chahidi_Cv.pdf" download>
             <button className="btn btn-neutral w-full mt-5 flex justify-between">
               Download CV
               <Image

@@ -33,32 +33,36 @@ const Projects = () => {
         variants={container}
         initial="hidden"
         animate="visible"
-        className="flex flex-wrap justify-center items-center mt-10 md:lg:flex-nowrap gap-16"
+        className="flex flex-wrap md:flex-nowrap w-full items-center justify-center gap-16 mt-10 px-10"
       >
         {projects.map((project) => (
-          <>
-            <motion.div
-              variants={item}
-              key={project.id}
-              className="project_container flex flex-col justify-center items-center gap-3 mt-10"
-            >
-              <Image
+          <motion.div
+            variants={item}
+            key={project.id}
+            className="card shadow-xl text-white bg-[#302f2fa9] w-[500px] h-[400px] flex flex-col"
+          >
+            <figure className="flex-grow-0">
+              <img
                 src={project.image}
-                width={400}
-                height={100}
+                className="w-full h-56 object-cover"
                 alt={`${project.title}_image`}
-                className={`${!project.resize ? "w-[100%]" : "w-[80%]"}`}
               />
-              <p className="uppercase italic text-left">{project.title}</p>
-              <p className="text-left px-5">{project.description}</p>
-              <button
-                className="m-5 bg-slate-300 text-black px-8 py-2 rounded-md"
-                onClick={() => window.open(project.link, "_blank")}
-              >
-                Visit
-              </button>
-            </motion.div>
-          </>
+            </figure>
+            <div className="card-body flex-grow p-4">
+              <p className="uppercase text-left text-lg font-semibold mb-2">
+                {project.title}
+              </p>
+              <p className="text-left text-white">{project.description}</p>
+              <div className="card-actions mt-4">
+                <button
+                  className="btn btn-success px-4 py-2 rounded-md"
+                  onClick={() => window.open(project.link, "_blank")}
+                >
+                  Visit
+                </button>
+              </div>
+            </div>
+          </motion.div>
         ))}
       </motion.section>
     </div>

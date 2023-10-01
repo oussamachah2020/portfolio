@@ -10,12 +10,12 @@ export const projects = [
   },
   {
     id: 2,
-    image: "/assets/project2.svg",
-    title: "Matrix",
+    image: "/assets/acme_store.png",
+    title: "ACME",
     description:
-      "It is a social media web app, where you can share and express yourself.Make friends and chat with them. Using React, scss and Firebase and some Libraries as antd and MaterialUi",
+      "A Digital Store built used ReactJs + Vite, TypeScript and UI library NextUi, Formik and yup for form validation AND firebase as a data storage",
     resize: false,
-    link: "https://matrix-sigma.vercel.app/",
+    link: "https://acme-admin-73d3e.web.app/",
   },
   {
     id: 4,
