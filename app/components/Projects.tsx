@@ -39,7 +39,7 @@ const Projects = () => {
           <motion.div
             variants={item}
             key={project.id}
-            className="card shadow-xl text-white bg-[#302f2fa9] w-[500px] h-[400px] flex flex-col"
+            className="card shadow-xl text-white bg-[#302f2fa9] w-[500px] h-[100%] md:h-[400px] flex flex-col"
           >
             <figure className="flex-grow-0">
               <img

@@ -40,7 +40,7 @@ const Experience = (props: Props) => {
           <motion.div
             variants={item}
             key={experience.id}
-            className="card shadow-xl text-white bg-[#302f2fa9] w-[100%] h-[200px] flex flex-col"
+            className="card shadow-xl text-white bg-[#302f2fa9] w-[100%] h-[100%] flex flex-col"
           >
             <div className="card-body flex-grow p-4">
               <p className="uppercase text-left text-lg font-semibold mb-2 text-green-400">

@@ -83,16 +83,16 @@ function Navbar({ open, setOpen }: Props) {
             className="flex flex-col justify-start items-start gap-10 m-auto"
           >
             <li>
-              <a href="">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <a href="">Skills</a>
+              <a href="#skills">Skills</a>
             </li>
             <li>
-              <a href="">Experience</a>
+              <a href="#experience">Experience</a>
             </li>
             <li>
-              <a href="">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
           </motion.ul>
         </motion.div>
