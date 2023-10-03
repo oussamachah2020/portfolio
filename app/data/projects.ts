@@ -15,7 +15,7 @@ export const projects = [
     description:
       "A Digital Store built used ReactJs + Vite, TypeScript and UI library NextUi, Formik and yup for form validation AND firebase as a data storage",
     resize: false,
-    link: "https://acme-admin-73d3e.web.app/",
+    link: "https://acme-roan.vercel.app/",
   },
   {
     id: 4,
