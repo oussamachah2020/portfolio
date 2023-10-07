@@ -4,6 +4,7 @@ import { projects } from "../data/projects";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -26,6 +27,7 @@ const item = {
 };
 
 const Projects = () => {
+  const [t] = useTranslation();
   return (
     <div className="mt-32" id="projects">
       <p className="uppercase text-center text-xl font-bold">Projects</p>
@@ -52,7 +54,7 @@ const Projects = () => {
               <p className="uppercase text-left text-lg font-semibold mb-2">
                 {project.title}
               </p>
-              <p className="text-left text-white">{project.description}</p>
+              <p className="text-left text-white">{t(project.description)}</p>
               <div className="card-actions mt-4">
                 <button
                   className="btn btn-success px-4 py-2 rounded-md"

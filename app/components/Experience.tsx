@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import { qualities } from "../data/Qualities";
 import { motion } from "framer-motion";
 import { experiences } from "../data/experience";
+import { useTranslation } from "react-i18next";
 
 type Props = {};
 
@@ -27,6 +27,7 @@ const item = {
 };
 
 const Experience = (props: Props) => {
+  const [t] = useTranslation();
   return (
     <div className="mt-32 w-full">
       <p className="uppercase text-center text-xl font-bold">Experience</p>
@@ -44,9 +45,11 @@ const Experience = (props: Props) => {
           >
             <div className="card-body flex-grow p-4">
               <p className="uppercase text-left text-lg font-semibold mb-2 text-green-400">
-                {experience.position} at {experience.company}
+                {t(experience.position)} at {t(experience.company)}
               </p>
-              <p className="text-left text-white">{experience.description}</p>
+              <p className="text-left text-white">
+                {t(experience.description)}
+              </p>
               <p className="text-left text-white">
                 <span className="underline">TECH: </span>
                 {experience.stack.map((tech, index) => (

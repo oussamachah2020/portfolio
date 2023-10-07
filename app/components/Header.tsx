@@ -1,10 +1,15 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
+import DarkIcon from "@/public/assets/dark.png";
+import LightIcon from "@/public/assets/light.png";
+import { ThemeContext } from "../context/ThemeContext";
+import MailDark from "@/public/assets/dark-mail.png";
+import MailLight from "@/public/assets/message.svg";
+import { useTranslation } from "react-i18next";
 
 type Props = {};
 
@@ -30,9 +35,12 @@ const sidebar = {
 
 const Header = (props: Props) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [t, i18n] = useTranslation();
+
+  const { toggleTheme, theme } = useContext(ThemeContext);
 
   return (
-    <div className="flex justify-between items-center p-10">
+    <div className={`flex justify-between items-center p-8 `}>
       <motion.div
         initial={{
           x: -500,
@@ -45,10 +53,15 @@ const Header = (props: Props) => {
         transition={{ duration: 1 }}
         className="flex justify-center items-center gap-2"
       >
-        <Image src="/assets/message.svg" alt="message" width={25} height={25} />
+        <Image
+          src={theme === "light" ? MailDark : MailLight}
+          alt="message"
+          width={25}
+          height={25}
+        />
         <button>
           <a href={`mailto:oussamachahidi20@gmail.com?subject=development job`}>
-            contact me
+            {t("header.contact")}
           </a>
         </button>
       </motion.div>
@@ -63,7 +76,34 @@ const Header = (props: Props) => {
         }}
         transition={{ duration: 1 }}
       >
-        <div className="block md:hidden">
+        <div className="flex justify-center items-center gap-10 md:hidden">
+          <button onClick={toggleTheme} className="p-0 ">
+            <Image
+              src={theme === "dark" ? DarkIcon : LightIcon}
+              alt="dark mode icon"
+              width={25}
+              height={25}
+            />
+          </button>
+          {i18n.language === "en" && (
+            <button
+              onClick={() => {
+                i18n.changeLanguage("fr");
+              }}
+            >
+              EN
+            </button>
+          )}
+
+          {i18n.language === "fr" && (
+            <button
+              onClick={() => {
+                i18n.changeLanguage("en");
+              }}
+            >
+              FR
+            </button>
+          )}
           <Image
             src={"/assets/Menu.svg"}
             width={25}
@@ -77,17 +117,48 @@ const Header = (props: Props) => {
         <div className="hidden md:block md:w-full">
           <ul className="flex justify-center items-center gap-7">
             <li className="list-item">
-              <a href="#home">Home</a>
+              <a href="#home">{t("header.home")}</a>
             </li>
             <li className="list-item">
-              <a href="#skills">Skills</a>
+              <a href="#skills">{t("header.skills")}</a>
             </li>
             <li className="list-item">
-              <a href="#projects">Projects</a>
+              <a href="#projects">{t("header.projects")}</a>
             </li>
-            {/* <li className="list-item">
-              <a href="#experience">Experience</a>
-            </li> */}
+            <li className="list-item">
+              <a href="#experience">{t("header.experience")}</a>
+            </li>
+            <li className="ml-10">
+              {i18n.language === "en" && (
+                <button
+                  onClick={() => {
+                    i18n.changeLanguage("fr");
+                  }}
+                >
+                  EN
+                </button>
+              )}
+
+              {i18n.language === "fr" && (
+                <button
+                  onClick={() => {
+                    i18n.changeLanguage("en");
+                  }}
+                >
+                  FR
+                </button>
+              )}
+            </li>
+            <li>
+              <button onClick={toggleTheme} className="p-0 ">
+                <Image
+                  src={theme === "dark" ? DarkIcon : LightIcon}
+                  alt="dark mode icon"
+                  width={25}
+                  height={25}
+                />
+              </button>
+            </li>
           </ul>
         </div>
       </motion.div>

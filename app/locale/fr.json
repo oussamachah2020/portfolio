@@ -1,0 +1,33 @@
+{
+    "header": {
+        "contact": "contactez moi",
+        "home": "Acceuil",
+        "skills": "Skills",
+        "projects": "Projets",
+        "experience": "Experience"
+    },
+    "hero": {
+        "caption": "Ingénieur logiciel et passionné de JavaScript, j'apporte une richesse de connaissances et d'expertise au monde du développement Web. Avec une base solide dans la création d'applications Web et un sens aigu du design, je me consacre à la création d'expériences numériques exceptionnelles."
+    },
+    "experience": {
+        "first": {
+            "title": "Développeur Web chez ",
+            "caption": "En tant que développeur web passionné et motivé, j'ai eu l'incroyable opportunité d'effectuer un stage chez PR MEDIA, une entreprise de marketing numérique dynamique et innovante, pour une durée de deux mois enrichissants. Au cours de cette période passionnante, j'ai perfectionné mes compétences en développement Web et acquis une expérience pratique précieuse dans la création d'expériences en ligne engageantes."
+        },
+        "second": {
+            "title": "Développeur Web Full Stack chez ",
+            "caption": "En tant que développeur Full Stack dédié chez Ismaeland, j'ai eu le privilège de jouer un rôle central dans la mission de l'entreprise visant à fournir des solutions numériques de pointe et à révolutionner l'expérience en ligne. Grâce à mon expertise en développement front-end et back-end, j'ai contribué à la création d'applications web robustes, conviviales et innovantes qui ont fait le succès d'Ismaeland."
+        }
+    },
+    "projects": {
+        "first": {
+            "description": "Il s'agit d'une application Web qui suit les cas de covid-19 à l'échelle mondiale. Utiliser ReactJs, CSS et la bibliothèque MaterialUi pour créer l'interface et récupérer les données à l'aide d'une API publique «disease.sh»."
+        },
+        "second": {
+            "description": "Une boutique numérique construite a utilisé ReactJs + Vite, TypeScript et la bibliothèque d'interface utilisateur NextUi, Formik et oui pour la validation des formulaires ET Firebase comme stockage de données"
+        },
+        "third": {
+            "description": "ProNerf est une application NFT Store, construite à l'aide de React Native avec Expo"
+        }
+    }
+}

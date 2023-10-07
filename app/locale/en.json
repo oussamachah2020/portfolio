@@ -1,0 +1,33 @@
+{
+    "header": {
+        "contact": "contact me",
+        "home": "Home",
+        "skills": "Skills",
+        "projects": "Projects",
+        "experience": "Experience"
+    },
+    "hero": {
+        "caption": "Software engineer and a JavaScript enthusiast, I bring a wealth of knowledge and expertise to the world of web development. With a strong foundation in building web applications and a keen eye for design, I am dedicated to crafting exceptional digital experiences."
+    },
+    "experience": {
+        "first": {
+            "title": "Web Developer at PR MEDIA",
+            "caption": "As a passionate and driven web developer, I had the incredible opportunity to intern at PR MEDIA, a dynamic and innovative digital marketing company, for a duration of two enriching months. During this exciting period, I honed my skills in web development and gained valuable hands-on experience in creating engaging online experiences."
+        },
+        "second": {
+            "title": "Full Stack Web Developer at ISMAELAND",
+            "caption": "As a dedicated Full Stack Developer at Ismaeland, I have had the privilege of playing a pivotal role in the company's mission to deliver cutting-edge digital solutions and revolutionize the online experience. With my expertise in both front-end and back-end development, I have contributed to the creation of robust, user-friendly, and innovative web applications that have driven Ismaeland's success."
+        }
+    },
+    "projects": {
+        "first": {
+            "description": "This is a web app that tracks covid-19 cases on a worldwide scale. Using ReactJs and css and MaterialUi library to build the interface and fetch data using a public api “disease.sh”."
+        },
+        "second": {
+            "description": "A Digital Store built used ReactJs + Vite, TypeScript and UI library NextUi, Formik and yup for form validation AND firebase as a data storage"
+        },
+        "third": {
+            "description": "ProNerf is a NFT Store application, built using React Native with Expo"
+        }
+    }
+}

@@ -22,7 +22,7 @@ function Navbar({ open, setOpen }: Props) {
             y: 0,
           }}
           transition={{ duration: 0.6 }}
-          className="nav absolute z-10 w-full h-[30rem] top-0 right-0"
+          className="nav z-10 w-full h-[30rem] top-0 right-0 fixed"
         >
           <Image
             src="/assets/close.png"
@@ -80,7 +80,7 @@ function Navbar({ open, setOpen }: Props) {
               y: -500,
             }}
             transition={{ duration: 1 }}
-            className="flex flex-col justify-start items-start gap-10 m-auto"
+            className="flex flex-col justify-start items-start gap-10 m-auto fixed"
           >
             <li>
               <a href="#home">Home</a>
