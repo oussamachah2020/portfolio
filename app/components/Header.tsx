@@ -75,12 +75,16 @@ const Header = (props: Props) => {
         transition={{ duration: 1 }}
         className="flex justify-center items-center gap-2"
       >
-        <Image
-          src={theme === "light" ? MailDark : MailLight}
-          alt="message"
-          width={25}
-          height={25}
-        />
+        {scrollPosition > 0 ? (
+          <Image src={MailLight} alt="mail icon" width={25} height={25} />
+        ) : (
+          <Image
+            src={theme === "light" ? MailDark : MailLight}
+            alt="message"
+            width={25}
+            height={25}
+          />
+        )}
         <button>
           <a href={`mailto:oussamachahidi20@gmail.com?subject=development job`}>
             {t("header.contact")}
