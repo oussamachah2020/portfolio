@@ -35,7 +35,7 @@ const Projects = () => {
         variants={container}
         initial="hidden"
         animate="visible"
-        className="flex flex-wrap md:flex-nowrap w-full items-center justify-center gap-16 mt-10 px-10"
+        className="flex flex-wrap md:flex-nowrap w-full items-center justify-center gap-16 mt-10 px-10 -z-10"
       >
         {projects.map((project) => (
           <motion.div

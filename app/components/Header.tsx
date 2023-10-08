@@ -34,13 +34,35 @@ const sidebar = {
 };
 
 const Header = (props: Props) => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
   const [t, i18n] = useTranslation();
-
   const { toggleTheme, theme } = useContext(ThemeContext);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.pageYOffset;
+      setScrollPosition(position);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollPosition]);
+
+  const navbarStyles = {
+    backgroundColor: scrollPosition > 0 ? "#000" : "transparent",
+    color: scrollPosition > 0 ? "white" : "",
+    boxShadow: scrollPosition > 0 ? "0 2px 4px rgba(0, 0, 0, 0.5)" : "none",
+    padding: scrollPosition > 0 ? "15px" : "20px",
+  };
 
   return (
-    <div className={`flex justify-between items-center p-8 `}>
+    <div
+      className={`flex justify-between items-center p-8 fixed w-full z-50`}
+      style={navbarStyles}
+    >
       <motion.div
         initial={{
           x: -500,
