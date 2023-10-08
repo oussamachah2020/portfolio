@@ -29,7 +29,7 @@ const item = {
 const Experience = (props: Props) => {
   const [t] = useTranslation();
   return (
-    <div className="mt-32 w-full">
+    <div className="mt-32 w-full" id="experience">
       <p className="uppercase text-center text-xl font-bold">Experience</p>
       <motion.section
         variants={container}

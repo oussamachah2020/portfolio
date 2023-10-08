@@ -9,7 +9,10 @@ type Props = {};
 const Hero = (props: Props) => {
   const [t] = useTranslation();
   return (
-    <div className="flex flex-col justify-center items-center md:flex-col z-0">
+    <div
+      className="flex flex-col justify-center items-center md:flex-col z-0"
+      id="home"
+    >
       <div className="flex flex-col justify-center items-center mt-20 md:flex-row gap-10">
         <Image
           src="/assets/profile.svg"
