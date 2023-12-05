@@ -17,7 +17,7 @@ const Contact = () => {
             E-mail:{" "}
             <span className="font-bold">oussamachahidi20@gmail.com</span>
           </p>
-          <a href="/oussama-chahidi_Cv.pdf" download>
+          <a href="/oussama-chahidi_resume.pdf" download>
             <button className="btn btn-neutral w-full mt-5 flex justify-between">
               Download CV
               <Image
@@ -52,7 +52,9 @@ const Contact = () => {
         </div>
       </div>
       <section className="flex justify-center items-center gap-7 mt-10">
-        <Link href={"https://github.com/oussamachah2020"}>
+        <button
+          onClick={() => window.open("https://github.com/oussamachah2020")}
+        >
           <Image
             src={"/assets/github.png"}
             width={60}
@@ -60,7 +62,7 @@ const Contact = () => {
             alt={"icons"}
             title="github.com"
           />
-        </Link>
+        </button>
         <Link href={""}>
           <Image
             src={"/assets/linkedIn.png"}

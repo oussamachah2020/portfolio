@@ -20,14 +20,17 @@
         }
     },
     "projects": {
-        "first": {
-            "description": "Il s'agit d'une application Web qui suit les cas de covid-19 à l'échelle mondiale. Utiliser ReactJs, CSS et la bibliothèque MaterialUi pour créer l'interface et récupérer les données à l'aide d'une API publique «disease.sh»."
-        },
-        "second": {
-            "description": "Une boutique numérique construite a utilisé ReactJs + Vite, TypeScript et la bibliothèque d'interface utilisateur NextUi, Formik et oui pour la validation des formulaires ET Firebase comme stockage de données"
-        },
-        "third": {
-            "description": "ProNerf est une application NFT Store, construite à l'aide de React Native avec Expo"
-        }
+      "first": {
+        "description": "Il s'agit d'une application Web qui suit les cas de covid-19 à l'échelle mondiale. Utiliser ReactJs, CSS et la bibliothèque MaterialUi pour créer l'interface et récupérer les données à l'aide d'une API publique «disease.sh»."
+      },
+      "second": {
+        "description": "Une boutique numérique construite a utilisé ReactJs + Vite, TypeScript et la bibliothèque d'interface utilisateur NextUi, Formik et oui pour la validation des formulaires ET Firebase comme stockage de données"
+      },
+      "third": {
+        "description": "ProNerf est une application NFT Store, construite à l'aide de React Native avec Expo"
+      },
+      "fourth": {
+        "description": "Magasin bien conçu pour toutes sortes de chaussures, construit avec NextJs, Tailwind et Sanity CMS + Firebase"
+      }
     }
 }

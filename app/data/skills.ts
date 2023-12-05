@@ -10,6 +10,11 @@ export const skills = [
     name: "NextJs",
   },
   {
+    id: 2,
+    logo: "/assets/expo.svg",
+    name: "Expo",
+  },
+  {
     id: 3,
     logo: "/assets/ts.svg",
     name: "TypeScript",
@@ -27,12 +32,12 @@ export const skills = [
   {
     id: 6,
     logo: "/assets/mongo.svg",
-    name: "MongoDB",
+    name: "Mongo DB",
   },
   {
     id: 7,
-    logo: "/assets/sql.svg",
-    name: "MySQL",
+    logo: "/assets/postgres.svg",
+    name: "Postgres",
   },
   {
     id: 8,
@@ -54,9 +59,9 @@ export const skills = [
     logo: "/assets/git.svg",
     name: "Git",
   },
-  // {
-  //   id: 12,
-  //   logo: "/assets/",
-  //   name: "ReactJs",
-  // },
+  {
+    id: 12,
+    logo: "/assets/docker.svg",
+    name: "Docker",
+  },
 ];

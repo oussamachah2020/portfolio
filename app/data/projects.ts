@@ -23,4 +23,12 @@ export const projects = [
     resize: true,
     link: "https://show-case-three.vercel.app/",
   },
+  {
+    id: 5,
+    image: "/assets/project5.png",
+    title: "Shoes Shop",
+    description: "projects.fourth.description",
+    resize: true,
+    link: "https://shoes-shop-eight.vercel.app/",
+  },
 ];

@@ -20,14 +20,17 @@
         }
     },
     "projects": {
-        "first": {
-            "description": "This is a web app that tracks covid-19 cases on a worldwide scale. Using ReactJs and css and MaterialUi library to build the interface and fetch data using a public api “disease.sh”."
-        },
-        "second": {
-            "description": "A Digital Store built used ReactJs + Vite, TypeScript and UI library NextUi, Formik and yup for form validation AND firebase as a data storage"
-        },
-        "third": {
-            "description": "ProNerf is a NFT Store application, built using React Native with Expo"
-        }
+      "first": {
+        "description": "This is a web app that tracks covid-19 cases on a worldwide scale. Using ReactJs and css and MaterialUi library to build the interface and fetch data using a public api “disease.sh”."
+      },
+      "second": {
+        "description": "A Digital Store built used ReactJs + Vite, TypeScript and UI library NextUi, Formik and yup for form validation AND firebase as a data storage"
+      },
+      "third": {
+        "description": "ProNerf is a NFT Store application, built using React Native with Expo"
+      },
+      "fourth": {
+        "description": "Well made store for all kinds of shoes, built using NextJs, Tailwind and Sanity CMS + firebase"
+      }
     }
 }

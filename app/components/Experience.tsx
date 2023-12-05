@@ -35,13 +35,13 @@ const Experience = (props: Props) => {
         variants={container}
         initial="hidden"
         animate="visible"
-        className="grid grid-cols-1 justify-center items-center mt-10 px-10 gap-10"
+        className="grid grid-cols-1 md:grid-cols-2 justify-center items-center mt-10 px-10 gap-10"
       >
         {experiences.map((experience) => (
           <motion.div
             variants={item}
             key={experience.id}
-            className="card shadow-xl text-white bg-[#302f2fa9] w-[100%] h-[100%] flex flex-col "
+            className="card shadow-xl text-white bg-[#302f2fa9] w-[100%] h-[100%] flex flex-col"
           >
             <div className="card-body flex-grow p-4">
               <p className="uppercase text-left text-lg font-semibold mb-2 text-green-400">
