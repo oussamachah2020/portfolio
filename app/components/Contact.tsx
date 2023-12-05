@@ -64,7 +64,11 @@ const Contact = () => {
           />
         </button>
         <button
-          onClick={() => window.open("https://github.com/oussamachah2020")}
+          onClick={() =>
+            window.open(
+              "https://www.linkedin.com/in/oussama-chahidi-aa1252219/"
+            )
+          }
         >
           <Image
             src={"/assets/linkedIn.png"}
@@ -74,15 +78,6 @@ const Contact = () => {
             title="LinkedIn.com"
           />{" "}
         </button>
-        <Link href={""}>
-          <Image
-            src={"/assets/twitter.png"}
-            width={50}
-            height={50}
-            alt={"icons"}
-            title="Twitter.com"
-          />
-        </Link>
       </section>
       <div>
         <p className="text-center mt-10 font-semibold text-[#7e7e7e]">
