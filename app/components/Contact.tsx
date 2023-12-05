@@ -63,7 +63,9 @@ const Contact = () => {
             title="github.com"
           />
         </button>
-        <Link href={""}>
+        <button
+          onClick={() => window.open("https://github.com/oussamachah2020")}
+        >
           <Image
             src={"/assets/linkedIn.png"}
             width={50}
@@ -71,7 +73,7 @@ const Contact = () => {
             alt={"icons"}
             title="LinkedIn.com"
           />{" "}
-        </Link>
+        </button>
         <Link href={""}>
           <Image
             src={"/assets/twitter.png"}
